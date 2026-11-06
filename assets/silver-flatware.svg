@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Silver flatware set">
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#f6f7f8"/>
+      <stop offset=".35" stop-color="#aab3bd"/>
+      <stop offset=".65" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#8d98a5"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e5e1d8"/>
+      <stop offset="1" stop-color="#cdd8db"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="240" fill="url(#table)"/>
+  <g fill="url(#metal)" stroke="#798593" stroke-width="3" stroke-linejoin="round">
+    <path d="M97 45c12 0 21 12 18 28l-9 47l16 74c2 10-4 19-14 19s-17-9-15-19l15-74l-9-47c-3-16 1-28-2-28z"/>
+    <path d="M157 46h15l-4 65l16 83c2 10-4 19-14 19s-17-9-15-19l16-83z"/>
+    <path d="M219 47c20 10 24 52 2 78l12 68c2 11-5 20-16 20s-18-9-15-20l12-67c-28-23-22-69 5-79z"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="2" opacity=".65">
+    <path d="M105 58l4 148"/>
+    <path d="M166 58l4 148"/>
+    <path d="M219 62c-11 31-10 75 2 143"/>
+  </g>
+</svg>

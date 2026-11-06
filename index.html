@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SetMatch Market</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phone-frame" aria-label="SetMatch app mock">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">SetMatch</p>
+            <h1>Complete your collection</h1>
+          </div>
+          <button class="icon-button" type="button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          </button>
+        </header>
+
+        <section class="search-panel">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+            <input value="Royal Albert saucer" aria-label="Search collectibles">
+          </label>
+          <button class="scan-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3"/><path d="M16 4h3a1 1 0 0 1 1 1v3"/><path d="M20 16v3a1 1 0 0 1-1 1h-3"/><path d="M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M7 12h10"/></svg>
+          </button>
+        </section>
+
+        <nav class="tabs" aria-label="Marketplace views">
+          <button class="active" type="button">Matches</button>
+          <button type="button">Wanted</button>
+          <button type="button">Selling</button>
+        </nav>
+
+        <section class="set-card">
+          <div class="set-summary">
+            <img src="assets/rose-teacup.svg" alt="Rose patterned teacup">
+            <div>
+              <p class="muted">Your active set</p>
+              <h2>Old Country Roses</h2>
+              <p>18 owned · 4 missing · 2 duplicates</p>
+            </div>
+          </div>
+          <div class="progress-row" aria-label="Set completion">
+            <span style="width: 78%"></span>
+          </div>
+          <div class="missing-grid">
+            <button type="button">Saucer ×2</button>
+            <button type="button">Teacup ×1</button>
+            <button type="button">Platter ×1</button>
+          </div>
+        </section>
+
+        <section class="section-heading">
+          <h2>Best matches nearby</h2>
+          <button type="button">Filter</button>
+        </section>
+
+        <section class="listing-list" aria-label="Matched listings">
+          <article class="listing-card">
+            <img src="assets/rose-teacup.svg" alt="Rose patterned teacup and saucer listing">
+            <div class="listing-copy">
+              <div class="match-line">
+                <strong>97% match</strong>
+                <span>$18</span>
+              </div>
+              <h3>Royal Albert saucer, 1962 backstamp</h3>
+              <p>Toronto · exact pattern · light crazing</p>
+            </div>
+            <button class="save-button" type="button" aria-label="Save listing">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </article>
+
+          <article class="listing-card">
+            <img src="assets/blue-willow-plate.svg" alt="Blue willow china plate listing">
+            <div class="listing-copy">
+              <div class="match-line">
+                <strong>Wanted</strong>
+                <span>$3 fee</span>
+              </div>
+              <h3>Buyer needs 2 Blue Willow dinner plates</h3>
+              <p>Ships accepted · Johnson Bros · 10.5 in</p>
+            </div>
+            <button class="save-button" type="button" aria-label="Save listing">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </article>
+
+          <article class="listing-card">
+            <img src="assets/crystal-goblet.svg" alt="Crystal goblet listing">
+            <div class="listing-copy">
+              <div class="match-line">
+                <strong>89% match</strong>
+                <span>$34</span>
+              </div>
+              <h3>Waterford Lismore goblet, single</h3>
+              <p>Mississauga · cut crystal · no chips</p>
+            </div>
+            <button class="save-button" type="button" aria-label="Save listing">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+          </article>
+        </section>
+
+        <button class="primary-action" type="button" id="openListing">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          List or request a piece
+        </button>
+
+        <nav class="bottom-nav" aria-label="Main navigation">
+          <button class="active" type="button" aria-label="Home">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></svg>
+          </button>
+          <button type="button" aria-label="Sets">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+          </button>
+          <button type="button" aria-label="Messages">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+          </button>
+          <button type="button" aria-label="Profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          </button>
+        </nav>
+      </section>
+
+      <aside class="desktop-panel">
+        <div class="panel-header">
+          <p class="eyebrow">Prototype notes</p>
+          <h2>Marketplace for set completion</h2>
+        </div>
+        <div class="data-card">
+          <span class="data-label">Listing model</span>
+          <strong>Paid intent posts</strong>
+          <p>Sellers and seekers both pay a small fee to publish a focused listing. Money exchange stays offline.</p>
+        </div>
+        <div class="data-card">
+          <span class="data-label">Backend guess</span>
+          <strong>Supabase Postgres</strong>
+          <p>Structured catalog data, photo storage, auth, saved searches, and future visual matching through embeddings.</p>
+        </div>
+        <div class="data-card grid-card">
+          <span>Exact matches</span><strong>34</strong>
+          <span>Wanted posts</span><strong>12</strong>
+          <span>Avg fee</span><strong>$3</strong>
+        </div>
+      </aside>
+    </main>
+
+    <dialog id="listingDialog">
+      <form method="dialog" class="dialog-card">
+        <div class="dialog-top">
+          <h2>Create listing</h2>
+          <button type="submit" aria-label="Close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+        <div class="choice-grid">
+          <label>
+            <input type="radio" name="intent" checked>
+            <span>Sell a piece</span>
+          </label>
+          <label>
+            <input type="radio" name="intent">
+            <span>Find a piece</span>
+          </label>
+        </div>
+        <label class="field">
+          <span>Pattern or maker</span>
+          <input value="Royal Albert Old Country Roses">
+        </label>
+        <label class="field">
+          <span>Piece needed</span>
+          <input value="Saucer, 5.5 inch">
+        </label>
+        <div class="fee-row">
+          <span>Publishing fee</span>
+          <strong>$3.00</strong>
+        </div>
+        <button class="checkout" type="submit">Continue to payment</button>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
